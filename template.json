@@ -65,20 +65,6 @@
           "{{user `build_cpu_cores`}}"
         ]
       ],
-      "vboxmanage_post": [
-        [
-          "modifyvm",
-          "{{.Name}}",
-          "--memory",
-          "{{user `memory`}}"
-        ],
-        [
-          "modifyvm",
-          "{{.Name}}",
-          "--cpus",
-          "{{user `cpu_cores`}}"
-        ]
-      ],
       "virtualbox_version_file": ".vbox_version"
     }
   ],
